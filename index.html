@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Student Registration Protal</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center p-4">Student Registration Protal</h1>
+        <div class="row">
+            <div class="col-md-12 shadow-lg bg-white p-4">
+                <div class="d-flex w-100 p-2 justify-content-between align-item-center">
+                    <div>
+                        <h1 class="text-danger">Student Records</h1>
+                    </div>
+                    <div>
+                        <button class="btn btn-light p-0 m-0"><input type="search" placeholder="Search Record"></button>
+                        <button class="btn btn-danger fw-bold"><i class="fa fa-trash"></i>Delete All</button>
+                        <button class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#myModal"><i
+                                class="fa fa-add"></i>Add new Student</button>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <table class="table table-striped text-center ">
+                            <thead>
+                                <tr>
+                                    <th class="fw-bold">Sr. No.</th>
+                                    <th class="fw-bold">Profile</th>
+                                    <th class="fw-bold">Name</th>
+                                    <th class="fw-bold">Email</th>
+                                    <th class="fw-bold">Mobile No.</th>
+                                    <th class="fw-bold">DOB</th>
+                                    <th class="fw-bold">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class=" align-item-center">
+                                <tr>
+                                    <td>1</td>
+                                    <td><img class="p-1 px-2"
+                                            src="https://hindify.org/wp-content/uploads/2023/03/cute-dp-status-wapp.jpg"
+                                            width="40px" alt=""></td>
+                                    <td>kshitij Magare</td>
+                                    <td>kshitijmagare100@gmail.com</td>
+                                    <td>8080358373</td>
+                                    <td>19/08/2001</td>
+                                    <td>
+                                        <button class="btn btn-success fw-bold p-0 px-1"><i
+                                                class="fa fa-edit"></i></button>
+                                        <button class="btn btn-danger fw-bold p-0 px-1"><i
+                                                class="fa fa-trash"></i></button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="modal animate__animated animate__zoomIn" id="myModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Add User</h4>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+
+                    </div>
+
+                    <div class="modal-body mb-3">
+                        <form>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Name</span>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Email</span>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Mobile No.</span>
+                                <input type="number " class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">DOB</span>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Password</span>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Upload Profile photo</span>
+                                <input type="file" class="form-control">
+                            </div>
+                            <button class="btn btn-success">Submit</button>
+                
+
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
